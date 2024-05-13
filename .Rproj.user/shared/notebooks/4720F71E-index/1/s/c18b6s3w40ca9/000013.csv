@@ -1,0 +1,2 @@
+"0","tidy(log, exponentiate = TRUE, conf.int = TRUE) %>%"
+"0","  kable()"

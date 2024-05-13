@@ -1,0 +1,14 @@
+{
+  "hash": "0e79979d6bb0348d512bbf4e90bded5e",
+  "result": {
+    "markdown": "---\ntitle: \"Logistic Regression Tutorial\"\nauthor: \"Abby Fergus\"\ndate: \"2024-05-08\"\ncategories: [news, code, analysis]\nimage: \"log.jpg\"\n---\n\n\nNot sure about logistic regression? Do not fear! Read here!\n\nYou might be thinking \"ugh\" I hate statistics what is logistic regression anyways?\n\n![](images/Screenshot%202024-05-08%20at%203.37.27%20PM-01.png){width=\"250\"}\n\n![](images/1.png)\n\nBut I promise you by the end of this post you'll be sleeping soundly knowing you mastered the logistic regression.\n\n![](images/Screenshot%202024-05-08%20at%203.40.53%20PM-01.png){width=\"248\"}\n\nOkay let's get started! Why do we need logistic regression? When should you use it?\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n[1] 2\n```\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

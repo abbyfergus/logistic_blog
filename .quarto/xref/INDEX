@@ -1,0 +1,32 @@
+{
+  "posts/post-with-code/index.qmd": {
+    "index.html": "9c23c0cb"
+  },
+  "posts/welcome/index.qmd": {
+    "index.html": "82c75a9f"
+  },
+  "index.qmd": {
+    "index.html": "ef5e4e42"
+  },
+  "about.qmd": {
+    "about.html": "ec1e5f5e"
+  },
+  "posts/logistic/index.qmd": {
+    "index.html": "8e0e1351"
+  },
+  "posts/logistic copy/index.qmd": {
+    "index.html": "2853a516"
+  },
+  "posts/logistic copy 2/index.qmd": {
+    "index.html": "9c70982d"
+  },
+  "posts/logistic_new/index.qmd": {
+    "index.html": "87a74aed"
+  },
+  "posts/logistic_new copy/index.qmd": {
+    "index.html": "d033a72c"
+  },
+  "posts/logistic_new copy 2/index.qmd": {
+    "index.html": "b9e9e0c5"
+  }
+}

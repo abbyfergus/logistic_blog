@@ -1,0 +1,23 @@
+---
+title: "Logistic Regression Tutorial"
+author: "Abby Fergus"
+date: "2024-05-08"
+categories: [news, code, analysis]
+image: "log.jpg"
+---
+
+Not sure about logistic regression? Do not fear! Read here!
+
+You might be thinking "ugh" I hate statistics what is logistic regression anyways?
+
+![](images/Screenshot%202024-05-08%20at%203.37.27%20PM.png)
+
+But I promise you by the end of this post you'll be sleeping soundly knowing you mastered the logistic regression.
+
+![](images/Screenshot%202024-05-08%20at%203.40.53%20PM.png)
+
+Okay let's get started! Why do we need logistic regression? When should you use it?
+
+```{r}
+1 + 1
+```

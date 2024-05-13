@@ -1,0 +1,5 @@
+"0","log <- glm(Species ~ Sepal.Length, family = binomial, data = data)"
+"0",""
+"0","log  %>% "
+"0","  tidy(conf.int = TRUE) %>%"
+"0","  kable()"

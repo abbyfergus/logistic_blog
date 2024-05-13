@@ -1,0 +1,14 @@
+---
+title: "Welcome To My Blog"
+author: "Abby Fergus"
+date: "2024-05-05"
+categories: [news]
+---
+
+Hi there! Welcome to my blog! My name is Abby, I am a first year psychology student at Princeton and I'm excited to teach you about logistic regression.
+
+![](images/clipboard-3064872629.png){width="136" height="129"}
+
+And for fun here is a picture of my perfect, angel cat (i.e. son) Olive:
+
+![](images/Screenshot 2024-05-12 at 8.04.43 PM.png){width="167"}
