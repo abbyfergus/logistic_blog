@@ -285,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </table>
 </div>
 </div>
-<p>Great! As you can see in the output above, sepal length significantly, positively predicts species (<span class="math inline">\(p\)</span> &lt; .001). However, interpretation of the <span class="math inline">\(b\)</span> values is slightly different from linear regression. Now let’s think back to our logistic regression formula. Remember the left side of the equation is what we call the log odds so the intercept in this case is the log odds when X is equal to 0 (when the sepal length is 0). In our case this is nonsensical but in other scenarios where a 0 value is interpretable, this would give you the baseline log odds. Now to interpret <span class="math inline">\(b1\)</span>, this is the change in the log odds of the y variable going from 0 to 1 for a one unit increase in X. For our case, this means for a one cm increase in sepal length, the log odds of the species being versicolor increases by 5.14.</p>
+<p>Great! As you can see in the output above, sepal length significantly, positively predicts species (<span class="math inline">\(p\)</span> &lt; .001). However, interpretation of the <span class="math inline">\(b\)</span> values is slightly different from linear regression. Now let’s think back to our logistic regression formula. Remember the left side of the equation is what we call the log odds so the intercept in this case is the log odds when X is equal to 0 (when the sepal length is 0). In our case this is nonsensical but in other scenarios it might make sense where a 0 value is interpretable. This would give you the baseline log odds. Now to interpret <span class="math inline">\(b1\)</span>, this is the change in the log odds of the y variable going from 0 to 1 for a one unit increase in X. For our case, this means for a one cm increase in sepal length, the log odds of the species being versicolor increases by 5.14.</p>
 <p>But what are log odds anyways? You might be thinking okay great but that is all a bunch of jargon to me. There’s a few things we can do to make it more interpretable.</p>
 <section id="odds-ratio" class="level3">
 <h3 class="anchored" data-anchor-id="odds-ratio">Odds ratio</h3>
@@ -349,11 +349,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] 17000</code></pre>
 </div>
 </div>
-<p>The odds of the species being versicolor is 17000 % higher than setosa for a 1 cm increase in sepal length.</p>
+<p>Wow! The odds of the species being versicolor is 17000% higher than setosa for a 1 cm increase in sepal length.</p>
 </section>
 <section id="probability" class="level3">
 <h3 class="anchored" data-anchor-id="probability">Probability</h3>
-<p>We can even get a probability of the event happening or not happening for a specific X value (in our case the probability of the species being versicolor for a specific sepal length. Luckily a simple function in r can do this for us. All we need to do is plug in the plogis(<span class="math inline">\(b0\)</span> + <span class="math inline">\(b1\)</span>*sepal.length). In our case, let’s predict the probability for a sepal length of 4.6 cm.</p>
+<p>We can even get a probability of the event happening or not happening for a specific X value (in our case the probability of the species being versicolor for a specific sepal length. Luckily a simple function in r can do this for us. All we need to do is use the plogis function in plug in the following information: plogis(<span class="math inline">\(b0\)</span> + <span class="math inline">\(b1\)</span>*sepal.length). In our case, let’s predict the probability for a sepal length of 4.6 cm.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># convert to probability </span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plogis</span>(<span class="sc">-</span><span class="fl">27.83</span> <span class="sc">+</span> (<span class="fl">5.14</span>)<span class="sc">*</span><span class="fl">4.6</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -361,12 +361,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>[1] 0.0149792</code></pre>
 </div>
 </div>
-<p>In this case, the probability of an iris being versicolor with a sepal length of 4.6 cm is very low at about 1.5%. This makes sense because if we look at our original data, irises with sepal lengths of 4.6 cm were always categorized as setosa.</p>
+<p>The probability of an iris being versicolor with a sepal length of 4.6 cm is very low at about 1.5%. This makes sense because if we look at our original data, irises with sepal lengths of 4.6 cm were always categorized as setosa.</p>
 </section>
 </section>
 <section id="conclusion" class="level2">
 <h2 class="anchored" data-anchor-id="conclusion">Conclusion</h2>
-<p>Now you’ve learned the basics of logisitic regression! It really is very simple to implement and it has extensions in all sorts of other areas of statistics. Just remember, when you are dealing with binary data, always use logistic!</p>
+<p>Now you’ve learned the basics of logisitic regression! It really is very simple to implement and has extensions in all sorts of other areas of statistics. Just remember, when you are dealing with binary data, always use logistic!</p>
 <p><img src="images/Binary data.png" class="img-fluid" width="362"></p>
 
 
