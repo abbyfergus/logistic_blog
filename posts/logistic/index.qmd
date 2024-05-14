@@ -105,7 +105,7 @@ Now looking at our coefficients, we can see that the odds ratio is greater than 
 
 Wow! The odds of the species being versicolor is 17000% higher than setosa for a 1 cm increase in sepal length.
 
-### Probability 
+### Probability
 
 We can even get a probability of the event happening or not happening for a specific X value (in our case the probability of the species being versicolor for a specific sepal length. Luckily a simple function in r can do this for us. All we need to do is use the plogis function in plug in the following information: plogis($b0$ + $b1$\*sepal.length). In our case, let's predict the probability for a sepal length of 4.6 cm.
 
@@ -120,4 +120,4 @@ The probability of an iris being versicolor with a sepal length of 4.6 cm is ver
 
 Now you've learned the basics of logisitic regression! It really is very simple to implement and has extensions in all sorts of other areas of statistics. Just remember, when you are dealing with binary data, always use logistic!
 
-![](images/Binary data.png){width="362"}
+![](images/Binary%20data.png){width="362"}
